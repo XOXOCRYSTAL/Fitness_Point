@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Gym Membership Registration </title>
+  <link rel="stylesheet" href="membership_styles.css">
+  <link rel="icon" href="images/favicon.ico" sizes="192x192" type="image/png">
+</head>
+<body>
+  <!-- Header with logo -->
+  <header>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#">
+            <img src="images/logo-white.png" alt="logo" class="logo-white" />
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <!-- Title section -->
+    <div class="title">Gym Membership Registration</div>
+    <div class="content">
+      <!-- Registration form -->
+      <form action="#">
+        <div class="user-details">
+          <!-- Input for Full Name -->
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your full name" required>
+          </div>
+          <!-- Input for Age -->
+          <div class="input-box">
+            <span class="details">Age</span>
+            <input type="number" placeholder="Enter your age" required>
+          </div>
+          <!-- Input for Email -->
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="email" placeholder="Enter your email" required>
+          </div>
+          <!-- Input for Phone Number -->
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" placeholder="Enter your phone number" required>
+          </div>
+          <!-- Input for Emergency Contact -->
+          <div class="input-box">
+            <span class="details">Emergency Contact</span>
+            <input type="text" placeholder="Enter emergency contact number" required>
+          </div>
+          
+          <!-- Input for Membership Type -->
+          <div class="input-box">
+            <span class="details">Membership Type</span>
+            <select required>
+              <option value="" disabled selected>Select Membership Type</option>
+              <option value="basic">Basic</option>
+              <option value="premium">Premium</option>
+              <option value="vip">VIP</option>
+            </select>
+          </div>
+        </div>
+        <div class="gender-details">
+          <!-- Radio buttons for gender selection -->
+          <input type="radio" name="gender" id="dot-1" required>
+          <input type="radio" name="gender" id="dot-2" required>
+          <input type="radio" name="gender" id="dot-3" required>
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <!-- Label for Male -->
+            <label for="dot-1">
+              <span class="dot one"></span>
+              <span class="gender">Male</span>
+            </label>
+            <!-- Label for Female -->
+            <label for="dot-2">
+              <span class="dot two"></span>
+              <span class="gender">Female</span>
+            </label>
+            <!-- Label for Prefer not to say -->
+            <label for="dot-3">
+              <span class="dot three"></span>
+              <span class="gender">Prefer not to say</span>
+            </label>
+          </div>
+        </div>
+        <!-- Submit button -->
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+      <!-- Back button -->
+      <div class="button">
+        <a href="javascript:history.back()" class="back-button">Back</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

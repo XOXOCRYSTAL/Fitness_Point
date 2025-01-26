@@ -1,0 +1,152 @@
+:root {
+  --gradient-1: linear-gradient(to right, #eeb5c6, #b2b4e4, #b3b4e4);
+  --gradient-2: linear-gradient(to right, #eeb5c4, #beb0e1, #7ed6d8);
+}
+
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background: var(--gradient-1); /* Use gradient-1 for background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__logo {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+}
+
+.nav__logo img {
+  width: 200px;
+  height: auto;
+  object-fit: contain;
+}
+
+.container {
+  position: relative;
+  max-width: 430px;
+  width: 100%;
+  background: var(--gradient-2); /* Use gradient-2 for container background */
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+}
+
+.container .form header {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.container .form label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.form input {
+  width: 100%;
+  height: 50px;
+  padding: 0 15px;
+  font-size: 16px;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.form input:focus {
+  border-color: #555;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.form a {
+  font-size: 16px;
+  color: #1f1f1f;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.form a:hover {
+  text-decoration: underline;
+}
+
+/* General Button Styling */
+.button, .back-button {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #333333; 
+  border: none;
+  border-radius: 5px; /* Rounded buttons */
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  margin-top:-10px;
+  outline: none; /* Removes outline on focus */
+}
+
+/* Hover Effect */
+.button:hover, .back-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
+  transform: translateY(-4px); /* Lift effect on hover */
+}
+
+/* Active/Pressed State */
+.button:active, .back-button:active {
+  transform: translateY(2px); /* Slight press effect */
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2); /* Reduced shadow when pressed */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .nav__logo img {
+    width: 150px;
+  }
+
+  .container {
+    padding: 1.5rem;
+  }
+
+  .form header {
+    font-size: 1.8rem;
+  }
+
+  .form label {
+    font-size: 0.9rem;
+  }
+
+  .form input {
+    font-size: 14px;
+  }
+
+  .form button.button,
+  .back-button {
+    font-size: 14px;
+  }
+
+  .signup {
+    font-size: 14px;
+  }
+}
